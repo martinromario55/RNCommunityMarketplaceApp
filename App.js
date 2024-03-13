@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View } from 'react-native'
+import { StatusBar, StyleSheet, Text, View } from 'react-native'
+import LoginScreen from './src/screens/LoginScreen'
 
 export default function App() {
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text className="text-rose-500">Hello World!</Text>
+    <View className="flex-1 bg-white">
       <StatusBar style="auto" />
+      <LoginScreen />
     </View>
   )
 }
