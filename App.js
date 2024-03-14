@@ -1,6 +1,8 @@
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
 import LoginScreen from './src/screens/LoginScreen'
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo'
+import TabNavigation from './src/navigations/TabNavigation'
+import { NavigationContainer } from '@react-navigation/native'
 
 export default function App() {
   return (
@@ -8,7 +10,9 @@ export default function App() {
       <View className="flex-1 bg-white">
         <StatusBar style="auto" />
         <SignedIn>
-          <Text>You are Signed In</Text>
+          <NavigationContainer>
+            <TabNavigation />
+          </NavigationContainer>
         </SignedIn>
         <SignedOut>
           <LoginScreen />
