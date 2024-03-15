@@ -16,6 +16,9 @@ export default function App() {
         </SignedIn>
         <SignedOut>
           <LoginScreen />
+          {/* <NavigationContainer>
+            <TabNavigation />
+          </NavigationContainer> */}
         </SignedOut>
       </View>
     </ClerkProvider>

@@ -5,7 +5,7 @@ import { initializeApp } from 'firebase/app'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: '-',
+  apiKey: '',
   authDomain: 'rncommunitymarketplace.firebaseapp.com',
   projectId: 'rncommunitymarketplace',
   storageBucket: 'rncommunitymarketplace.appspot.com',
