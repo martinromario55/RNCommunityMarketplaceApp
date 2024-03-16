@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native'
+import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
+import PostItem from './PostItem'
 
-const LatestItemList = () => {
+const LatestItemList = ({ itemList }) => {
   return (
-    <View>
-      <Text>LatestItemList</Text>
+    <View className="mt-3">
+      <Text className="text-xl">Latest Items</Text>
+      <View>
+        <FlatList
+          data={itemList}
+          numColumns={2}
+          renderItem={({ item, index }) => <PostItem item={item} />}
+        />
+      </View>
     </View>
   )
 }
