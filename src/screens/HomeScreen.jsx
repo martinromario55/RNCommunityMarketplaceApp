@@ -51,6 +51,7 @@ const HomeScreen = () => {
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
+      nestedScrollEnabled={true}
       className="flex-1 bg-white p-3"
     >
       {/* Header and Search bar */}
@@ -60,7 +61,7 @@ const HomeScreen = () => {
       {/* Category List */}
       <Categories categoryList={categoryList} />
       {/* Latest Item List */}
-      <LatestItemList itemList={itemList} />
+      <LatestItemList itemList={itemList} heading={'Latest Items'} />
     </ScrollView>
   )
 }

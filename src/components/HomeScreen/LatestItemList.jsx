@@ -2,10 +2,10 @@ import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import PostItem from './PostItem'
 
-const LatestItemList = ({ itemList }) => {
+const LatestItemList = ({ itemList, heading }) => {
   return (
     <View className="mt-3">
-      <Text className="text-xl">Latest Items</Text>
+      <Text className="text-xl">{heading}</Text>
       <View>
         <FlatList
           data={itemList}
